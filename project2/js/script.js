@@ -105,9 +105,19 @@ window.addEventListener("load", () => {
 	}
 
 	// header background color
-	let winw;
+	let winW;
 	let wint=0;
 
+	window.addEventListener("resize", () => {
+		winW=window.innerWidth;
+	
+		if(winW > 740){
+			if(mobile.classList.contains("active")){
+				mobile.classList.remove("active");
+				dim.removeAttribute("style");
+			}
+		}
+	});
 
 	const trigger=new ScrollTrigger.default({
 		trigger: {
