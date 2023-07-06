@@ -4,6 +4,9 @@ window.addEventListener("load", () => {
 	let gnbLi=gnbUl.children;
 	let header=document.getElementById("header");
 	console.log(gnbLi);
+	let mobilemenu=document.getElementById("mobile");
+	let mobileUl=mobilemenu.firstElementChild;
+	let mobileLi=mobileUl.children;
 
 	for(i=0; i<gnbLi.length; i++){
 		gnbLi[i].addEventListener("mouseenter", (e) => {
@@ -136,6 +139,15 @@ window.addEventListener("load", () => {
 			e.preventDefault();
 			targety=pageList[i].offsetTop;
 			gsap.to(window, {scrollTo: targety, duration: 0.5});
+		});
+		mobileLi[i].addEventListener("click", (e) => {
+			e.preventDefault();
+			targety=pageList[i].offsetTop;
+			gsap.to(window, {scrollTo: targety, duration: 0.5});
+			mobile.classList.remove("active");
+			gsap.to(dim, {opacity: 0, duration: 0.3, onComplete: () => {
+				dim.removeAttribute("style");
+			}})
 		});
 	}
 });

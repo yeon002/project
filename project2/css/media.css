@@ -129,7 +129,10 @@
 	#brand ul li {
 		display: flex;
 		justify-content: center;
-		width: calc(100%/2);
+		width: calc((100% - 12px)/2);
+	}
+	#brand ul li:nth-child(2n) {
+		margin-right: 0;
 	}
 
 
