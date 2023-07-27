@@ -10,9 +10,6 @@
 	#business .content ul li:not(:first-child) {
 		margin-top: 50px;
 	}
-
-
-
 	#culture .content ul li {
 		justify-content: flex-end;
 		flex-direction: row-reverse;
@@ -29,8 +26,6 @@
 	#culture .content ul li .text span br {
 		display: none;
 	}
-
-
 	#award .inner .content ul {
 		padding: 0 75px;
 	}
@@ -89,10 +84,15 @@
 		margin-right: 0;
 	}
 
+	#main .text a {
+		width: 25%;
+	}
 }
 
 @media only screen and (max-width: 740px) {
-
+	html {
+		font-size: 90%;
+	}
 	#gnb {
 		display: none;
 	}
@@ -108,6 +108,25 @@
 	}
 	#portfolio .content ul li:nth-child(2n+1){
 		margin-right: 35px;
+	}
+	.page3.on .content ul li:first-child, 
+	.page3.on .content ul li:nth-child(2) {
+		opacity: 1;
+		top: 0;
+		transition-delay: 0.5s;
+	}
+	.page3.on .content ul li:nth-child(3), 
+	.page3.on .content ul li:nth-child(4) {
+		opacity: 1;
+		top: 0;
+		transition-delay: 1.0s;
+	}
+	
+	.page3.on .content ul li:nth-child(5), 
+	.page3.on .content ul li:last-child {
+		opacity: 1;
+		top: 0;
+		transition-delay: 1.5s;
 	}
 
 	#award .inner .content ul {
@@ -161,4 +180,100 @@
 	#footer .sns {
 		margin-top: 15px;
 	}
+	#main .text a {
+		width: 30%;
+	}
+	.page2 .content ul li {
+		width: 100%;
+		align-items: center;
+	}
+	#business .content ul li .text {
+		width: 100%;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 600px) {
+	html {
+		font-size: 90%;
+	}
+	
+}
+@media only screen and (max-width: 500px) {
+	#main .text {
+		font-size: 0.9em;
+
+	}
+	/* .mobile .tab {
+		right: 60px;
+	} */
+	#main .text strong {
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#main .text {
+		font-size: 0.7em;
+	}
+	#portfolio .content ul {
+		justify-content: center;
+	}
+	#portfolio .content ul li {
+		width: 80%;
+	}
+	#portfolio .content ul li:nth-child(2n+1) {
+		margin: 0;
+		margin-top: 45px;
+	}
+	#culture .content ul li {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		
+	}
+	#culture .content ul li .text {
+		text-align: center;
+	}
+	#culture .content ul li:nth-child(2n) .text {
+		text-align: center;
+		left: 590px;
+	}
+	#culture .content ul li .text span {
+		margin-top: 10px;
+		width: 90%;
+	}
+	.page4 .content ul li .img {
+		width: 100%;
+		margin-top: 20px;
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	.page4.on .content ul li:first-child .img {
+		opacity: 1;
+		transition-delay: 0.6s;
+	}
+	.page4.on .content ul li:nth-child(2) .img {
+		opacity: 1;
+		transition-delay: 1.2s;
+	}
+	.page4.on .content ul li:nth-child(3) .img {
+		opacity: 1;
+		transition-delay: 1.8s;
+	}
+	.page4.on .content ul li:nth-child(4) .img {
+		opacity: 1;
+		transition-delay: 2.4s;
+	}
+	.page4.on .content ul li:last-child .img {
+		opacity: 1;
+		transition-delay: 3s;
+	}
+	#culture .content ul li .img img {
+		border-radius: 20px;
+		width: 100%;
+		object-fit: cover;
+	}
+	#culture .content ul li:first-child .img::after {
+		display: none;
+	}
+	
 }

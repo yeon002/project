@@ -130,7 +130,7 @@ window.addEventListener("load", () => {
 			},
 			offset: {
 				viewport: {
-					x: 0,
+					x: 0, 
 					y: 0.25
 				}
 			}
@@ -147,6 +147,7 @@ window.addEventListener("load", () => {
 	for(let i=0; i<gnbLi.length; i++){
 		gnbLi[i].addEventListener("click", (e) => {
 			e.preventDefault();
+			console.log(i);
 			targety=pageList[i].offsetTop;
 			gsap.to(window, {scrollTo: targety, duration: 0.5});
 		});
