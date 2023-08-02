@@ -1,336 +1,475 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wyile</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@terwanerik/scrolltrigger@1.0.5/dist/ScrollTrigger.min.js"></script>
-	<script src="js/script.js"></script>
+<title>요즘감성, 요즘공간 에몬스</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Silkscreen&display=swap">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/ismobile.js"></script>
+<script src="js/main.js"></script>
 </head>
+
 <body>
-	<div class="wrapper">
+<div class="skip_nav">
+	<a href="#section">본문 바로가기</a>
+	<a href="#gnb">주 메뉴 바로가기</a>
+</div>
+<div class="wrapper">
+	<div id="index">
 		<header id="header">
-			<div class="inner">
-				<div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
-				<nav id="gnb">
-					<ul>
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">BUSINESS</a></li>
-						<li><a href="#">PORTFOLIO</a></li>
-						<li><a href="#">CULTURE</a></li>
-						<li><a href="#">AWARDS</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>
-				</nav>
+			<div class="logo">
+				<h1 id="logo"><a href="">로고</a></h1>
 			</div>
-		</header>
-		<div class="mobile">
-			<div class="tab">
-				<a href="#">
+			<nav id="gnb">
+				<ul>
+					<li>
+						<a href="">침실가구
+							<p class="m_btn">
+								<span class="up"></span>
+								<span class="down"></span>
+							</p>
+						</a>
+						<ul>
+							<li><a href="">침대</a></li>
+							<li><a href="">협탁</a></li>
+							<li><a href="">서랍장</a></li>
+							<li><a href="">화장대</a></li>
+							<li><a href="">스툴</a></li>
+							<li><a href="">소가구</a></li>
+							<li><a href="">패밀리 침대</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">매트리스
+							<p class="m_btn">
+								<span class="up"></span>
+								<span class="down"></span>
+							</p>
+						</a>
+						<ul>
+							<li><a href="">매트리스</a></li>
+							<li><a href="">베개</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="">붙박이장/옷장
+							<p class="m_btn">
+								<span class="up"></span>
+								<span class="down"></span>
+							</p>
+						</a>
+						<ul>
+							<li><a href="">붙박이장</a></li>
+							<li><a href="">옷장</a></li>
+							<li><a href="">슬라이딩장</a></li>
+							<li><a href="">드레스룸</a></li>
+							<li><a href="">서랍장</a></li>
+							<li><a href="">소가구</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">소파/거실가구
+							<p class="m_btn">
+								<span class="up"></span>
+								<span class="down"></span>
+							</p>
+						</a>
+						<ul>
+							<li><a href="">가죽 소파</a></li>
+							<li><a href="">패브릭 소파</a></li>
+							<li><a href="">1인리클라이너</a></li>
+							<li><a href="">거실장</a></li>
+							<li><a href="">소파 테이블</a></li>
+							<li><a href="">장식장</a></li>
+							<li><a href="">사이드테이블</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">식탁/주방가구
+							<p class="m_btn">
+								<span class="up"></span>
+								<span class="down"></span>
+							</p>
+						</a>
+						<ul>
+							<li><a href="">식탁세트</a></li>
+							<li><a href="">식탁</a></li>
+							<li><a href="">식탁의자</a></li>
+							<li><a href="">식탁벤치</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">서재/싱글룸
+							<p class="m_btn">
+								<span class="up"></span>
+								<span class="down"></span>
+							</p>
+						</a>
+						<ul>
+							<li><a href="">책상</a></li>
+							<li><a href="">책상의자</a></li>
+							<li><a href="">책장</a></li>
+							<li><a href="">침대</a></li>
+							<li><a href="">매트리스</a></li>
+							<li><a href="">옷장</a></li>
+							<li><a href="">서랍장</a></li>
+							<li><a href="">소가구</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="utils">
+				<a href="" class="search">찾기</a>
+				<a href="" class="login">로그인</a>
+				<a href="" class="bell">알림</a>
+				<a href="" class="tab">
+					<i>탭메뉴</i>
 					<span></span>
 					<span></span>
 					<span></span>
 				</a>
 			</div>
-			<nav id="mobile">
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">BUSINESS</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">CULTURE</a></li>
-					<li><a href="#">AWARDS</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="dim"></div>
-
-		<section id="section">
-			<div id="main" class="page1 sub">
-				<div class="text">
-					<span>value of WYLIE</span>
-					<strong>꿈을 꾸고 실현을 상상하며<br>가치를 함께 합니다.</strong>
-					<a href="#">MORE</a>
-				</div>
-			</div>
-			<div id="business" class="page2 sub">
-				<div class="title">
-					<h2>BUSINESS</h2>
-					<span>고객사의 니즈에 최적화된 디지털 통합 마케팅 솔루션을 제공합니다.</span>
-				</div>
-				<div class="content">
-					<ul>
-						<li>
-							<div class="img">
-								<img src="images/icon_business1.jpg" alt="">
-							</div>
-							<div class="text">
-								<strong>Platform Creation</strong>
-								<span>웹/앱 플랫폼 디자인</span>
-								<span>뉴미디어 플랫폼 디자인</span>
-								<span>웹/모바일 퍼블리싱</span>
-								<span>jsp / asp / php / .net 개발</span>
-								<span>iOS / Android개발</span>
-								<span>클라우드 세팅 / 운영</span>
-							</div>
-						</li>
-						<li>
-							<div class="img">
-								<img src="images/icon_business2.jpg" alt="">
-							</div>
-							<div class="text">
-								<strong>Marketion COMM.</strong>
-								<span>마케팅 전략 컨설팅</span>
-								<span>광고 캠페인 기획 운영</span>
-								<span>온, 오프 프로모션 기획 운영</span>
-								<span>바이럴, SNS 기획 운영</span>
-								<span>마케팅 KPI 관리</span>
-							</div>
-						</li>
-						<li>
-							<div class="img">
-								<img src="images/icon_business3.jpg" alt="">
-							</div>
-							<div class="text">
-								<strong>Maintenance</strong>
-								<span>플랫폼 활성화 기획</span>
-								<span>프로모션, 배너 디자인</span>
-								<span>호스팅 개발 운영</span>
-								<span>모니터링, 로그분석, 리포팅</span>
-								<span>고객 CS 관리</span>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div id="portfolio" class="page3 sub">
-				<div class="inner">
-					<div class="title">
-						<h2>PORTFOLIO</h2>
-						<span>고객사와 하나 된 울림이 만들어 낸 행복한 성과입니다.</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>
-								<a href="#">
-									<div class="img"><img src="images/portfolio1.jpg" alt=""></div>
-									<div class="text">
-										<strong>한화 리조트</strong>
-										<span>영업용 템플릿 온라인 플랫폼 구축</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="img"><img src="images/portfolio2.jpg" alt=""></div>
-									<div class="text">
-										<strong>ABOUT ME 쇼핑몰</strong>
-										<span>리뉴얼 제작</span>
-									</div>
-								</a>	
-							</li>
-							<li>
-								<a href="#">
-									<div class="img"><img src="images/portfolio3.jpg" alt=""></div>
-									<div class="text">
-										<strong>CJ BYO 유산균</strong>
-										<span>2016 디지털 캠페인</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="img"><img src="images/portfolio4.jpg" alt=""></div>
-									<div class="text">
-										<strong>대구은행</strong>
-										<span>비대면채널 전략 및 UXUI컨설팅</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="img"><img src="images/portfolio5.jpg" alt=""></div>
-									<div class="text">
-										<strong>대유위니아</strong>
-										<span>서비스 온라인 플랫폼 구축</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="img"><img src="images/portfolio6.jpg" alt=""></div>
-									<div class="text">
-										<strong>쥬비스 다이어트</strong>
-										<span>APP 3.0 리뉴얼 구축</span>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div id="culture" class="page4 sub">
-				<div class="title">
-					<h2>CULTURE</h2>
-					<span>매년 새롭게 구성되는 Club Wylie는 다양한 직군의 멤버들이 조를 이루어 한 해 동안 허락된 땡땡이를 즐기며 팀워크를 다집니다.</span>
-				</div>
-				<div class="content">
-					<ul>
-						<li>
-							<div class="text">
-								<strong>PLAY - Wyile Club<br>조조 영화, 맛집 탐방, 1박 2일</strong>
-								<span>"잘 노는 것도 능력"이라는 모토 아래,<br>조조영화를 보고, 맛집을 찾고, 나들이를 떠나며, 잘 놀기만 하면 연말 해외여행 포상까지 기다리고 있는 와일리만의 Friendship Activity입니다.</span>
-							</div>
-							<div class="img">
-								<img src="images/culture1.jpg" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="text">
-								<strong>PLAY - WYLIE Refresh<br>한 달에 한 번 여유로운 시간</strong>
-								<span>매월 첫 번째 금요일은 여유롭습니다.<br>
-									점심시간 이후 오후 1시 부터 2시까지 각 팀별/그룹별 간 리프레쉬 시간을 함께 하며 사무실을 벗어나<br>생기를 되찾습니다.</span>
-							</div>
-							<div class="img">
-								<img src="images/culture2.jpg" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="text">
-								<strong>EAT - Wyile Kitchen<br>집밥을 함께 하고픈 마음</strong>
-								<span>매일 점심, 모두 모여 함께 식사를 합니다.<br>
-									바쁜 업무 속에서 식사만큼은 꼭 제대로 된 ‘집밥’을<br>챙겨 먹어야 하는 와일리의 철학 때문입니다.
-									<br> 정성 가득한 ‘와일리백반’ 덕분에<br>오늘도 와일리의 프로젝트는 ‘밥심’으로 완성됩니다.</span>
-							</div>
-							<div class="img">
-								<img src="images/culture3.jpg" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="text">
-								<strong>EAT - WYLIE Cafe<br>커피향과 함께 시작하는 하루</strong>
-								<span>매일 아침, 은은한 커피향이<br>가득한 곳에서 힘찬 하루를 시작합니다. <br>
-									커피 한 잔으로 나누는 멤버들의 위로와 수다 속에서<br>와일리의 크리에이티브는 매일 새롭게 태어납니다.
-								</span>
-							</div>
-							<div class="img">
-								<img src="images/culture4.jpg" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="text">
-								<strong>STUDY - WYLIE Study<br>학생 때 못 다한 공부 지금도 늦지 않았다</strong>
-								<span>지식의 공유, 업무 스킬의 공유,<br>
-									상식의 공유, 트렌드 및 환경 변화의 공유 등을 목표로<br>
-									자유로운 스터디 문화 조성을 통해 개인 및 팀 역량 향상</span>
-							</div>
-							<div class="img">
-								<img src="images/culture5.jpg" alt="">
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div id="award" class="page5 sub">
-				<div class="inner">
-					<div class="title">
-						<h2>AWARDS</h2>
-						<span>주요 Award의 다양한 수상 실적을 통해 전문성과 크리에이티브를 검증받았습니다.</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>
-								<div class="img"><img src="images/img_award1.jpg" alt=""></div>
-								<div class="text">
-									<strong>KB스타뱅킹</strong>
-									<span>App Award Korea 2018</span>
-									<span>기술이노베이션</span>
-									<span>대상</span>
-								</div>
-							</li>
-							<li>
-								<div class="img"><img src="images/img_award2.jpg" alt=""></div>
-								<div class="text">
-									<strong>서울성모병원</strong>
-									<span>Web Award Korea 2018</span>
-									<span>종합의료분야 & 건강/의료분야</span>
-									<span>대상</span>
-								</div>
-							</li>
-							<li>
-								<div class="img"><img src="images/img_award3.jpg" alt=""></div>
-								<div class="text">
-									<strong>어바웃미</strong>
-									<span>Web Award Korea 2018</span>
-									<span>제품브랜드분야</span>
-									<span>대상</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div id="brand" class="page6 sub">
-				<ul>
-					<li><a href="#"><img src="images/signature1.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature2.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature3.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature4.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature5.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature6.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature7.jpg" alt=""></a></li>
-					<li><a href="#"><img src="images/signature1.jpg" alt=""></a></li>
-				</ul>
-			</div>
-			<div id="contact" class="page7 sub">
-				<div class="inner">
-					<div class="title">
-						<h2>CONTACT US</h2>
-						<span>다양한 경험과 노하우로 성공을 설계합니다.</span>
-					</div>
-					<div class="content">
-						<div class="input_area">
-							<ul>
-								<li><input type="text" placeholder="YOUR NAME*"></li>
-								<li><input type="text" placeholder="YOUR E-MAIL*"></li>
-								<li><input type="text" placeholder="SUBJECT*"></li>
-							</ul>
-							<textarea placeholder="YOUR MESSAGE*" class="textarea"></textarea>
+		</header>
+		<div class="main_slider">
+			<div class="swiper mainSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<video id="video1" src="video/video1.mp4" alt="slider1" poster="images/poster1.jpg"></video>
+						<div class="desc">
+							<h2>Expressive furniture, EMONS</h2>
+							<p>
+								사람은 공간을, 공간은 사람을 닮아갑니다.<br>
+								표정있는 가구, 에몬스
+							</p>
+							<a href="">VIEW</a>
 						</div>
-						<a href="#">SEND MESSAGE</a>
+					</div>
+					<div class="swiper-slide">
+						<video id="video2" src="video/video2.mp4" alt="slider2" poster="images/poster2.jpg"></video>
+						<div class="desc">
+							<h2>에몬스, 가구에 진심을 담다</h2>
+							<p>
+								집으로 가는길이 설렘으로 가득하고,<br>
+								즐거운 이야기와 추억을 만들고 쌓아가는 공간
+							</p>
+							<a href="">VIEW</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<video id="video3" src="video/video3.mp4" alt="slider3" poster="images/poster3.jpg"></video>
+						<div class="desc">
+							<h2>Heritage of EMONS, Since 1979</h2>
+							<p>
+								실용성을 넘어선 에몬스의 감성디자인은 공간의 새로운 가치를 만들어갑니다.<br>
+								디자인, 에몬스
+							</p>
+							<a href="">VIEW</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="edge_slider">
+			<div class="swiper edgeSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="">
+							<span class="button">e-카탈로그</span>
+							<span class="title">F/W 2022 BED ROOM</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<span class="button">e-카탈로그</span>
+							<span class="title">F/W 2022 LIVING ROOM</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<span class="button">e-카탈로그</span>
+							<span class="title">F/W 2022 DINNING ROOM</span>
+						</a>
+					</div>
+				</div>
+				<div class="controller">
+					<p><span id="bar"></span></p>
+					<a href="" id="pause_play" class="pause">pause</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dim"></div>
+	<section id="page1" class="product">
+		<div class="swap_image">
+			<div class="bg"><img src="images/bg_hover1.png" alt="hover1"></div>
+			<div class="bg"><img src="images/bg_hover2.png" alt="hover2"></div>
+			<div class="bg"><img src="images/bg_hover3.png" alt="hover3"></div>
+			<div class="bg"><img src="images/bg_hover4.png" alt="hover4"></div>
+		</div>
+		<div class="product_inner">
+			<div class="swiper sub1Swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="title">
+							<a href="">
+								<span>NEW</span>
+								<strong>New Cozy</strong>
+								<p>온전한 휴식을 완성하는 새로운 코지 인테리어</p>
+							</a>
+						</div>
+						<div class="content">
+							<div class="text">
+								<ul>
+									<li>
+										<strong>구성</strong>
+										<p>뉴코지패브릭침대[KK]</p>
+									</li>
+									<li>
+										<strong>컬러</strong>
+										<p>크림 / 애쉬블루</p>
+									</li>
+									<li>
+										<strong>소재</strong>
+										<p>
+											유럽 독일산 더블릭 기능성 패브릭,<br>
+											정제목+E0합판, 크롬다리
+										</p>
+									</li>
+									<li>
+										<strong>사이즈</strong>
+										<p>(W)1960 X (D)2270 X (H)1255</p>
+									</li>
+								</ul>
+							</div>
+							<div class="icons">
+								<a href="" class="view">제품보러가기</a>
+								<a href="" class="like">관심상품등록</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="title">
+							<a href="">
+								<span>NEW</span>
+								<strong>Dalla</strong>
+								<p>편안하고 건강한 숙면의 세계</p>
+							</a>
+						</div>
+						<div class="content">
+							<div class="text">
+								<ul>
+									<li>
+										<strong>구성</strong>
+										<p>델라S 매트리스[KK]</p>
+									</li>
+									<li>
+										<strong>컬러</strong>
+										<p>웜 베이지</p>
+									</li>
+									<li>
+										<strong>소재</strong>
+										<p>
+											마감재: 향균 그라프톤 삼중직원단(상판),<br>
+											내장재: 고밀도폼X2, 에그프로파일폼<br>
+										</p>
+									</li>
+									<li>
+										<strong>사이즈</strong>
+										<p>(W)1800 X (D)2070 X (H)325</p>
+									</li>
+								</ul>
+							</div>
+							<div class="icons">
+								<a href="" class="view">제품보러가기</a>
+								<a href="" class="like">관심상품등록</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="title">
+							<a href="">
+								<span>NEW</span>
+								<strong>Kustom Harmony's</strong>
+								<p>커스텀 소파</p>
+							</a>
+						</div>
+						<div class="content">
+							<div class="text">
+								<ul>
+									<li>
+										<strong>구성</strong>
+										<p>커스텀 하모니스 4인 소파</p>
+									</li>
+									<li>
+										<strong>컬러</strong>
+										<p>
+											베이지+번트카멜, 카멜+D그레이,<br>
+											L그레이+딥그린 외3종
+										</p>
+									</li>
+									<li>
+										<strong>소재</strong>
+										<p>
+											쿠션재: 우레탄폼 32kg 고탄성폼<br>
+											마감재: 이태리 밀로스 황소 가죽
+										</p>
+									</li>
+									<li>
+										<strong>사이즈</strong>
+										<p>(W)2950 X (D)950 X (H)950</p>
+									</li>
+								</ul>
+							</div>
+							<div class="icons">
+								<a href="" class="view">제품보러가기</a>
+								<a href="" class="like">관심상품등록</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="title">
+							<a href="">
+								<span>NEW</span>
+								<strong>Kustom Liv</strong>
+								<p>내 공간속에 녹아든 오브제</p>
+							</a>
+						</div>
+						<div class="content">
+							<div class="text">
+								<ul>
+									<li>
+										<strong>구성</strong>
+										<p>커스텀 리브 티테이블[대/1200]</p>
+									</li>
+									<li>
+										<strong>컬러</strong>
+										<p>
+											퓨어 화이트, 클라우드, 오이스터<br>
+											파우더 핑크, 모스그린
+										</p>
+									</li>
+									<li>
+										<strong>소재</strong>
+										<p>
+											상판: 18T 자작합판 + 0.7T HPM<br>
+											체대(다리): 스틸 프레임 + 크롬 도금
+										</p>
+									</li>
+									<li>
+										<strong>사이즈</strong>
+										<p>(W)1800 X (D)2070 X (H)325</p>
+									</li>
+								</ul>
+							</div>
+							<div class="icons">
+								<a href="" class="view">제품보러가기</a>
+								<a href="" class="like">관심상품등록</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="controller">
+					<a href="" class="swiper-button-next"></a>
+					<a href="" class="swiper-button-prev"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="page2" class="service">
+		<div class="service_inner">
+			<div class="text">
+				<div class="title">
+					<h3>SERVICE</h3>
+					<p>고객센터 1800-9977</p>
+				</div>
+				<div class="button">
+					<a href="">고객문의</a >
+				</div>
+			</div>
+			<div class="box_container">
+				<ul>
+					<li>
+						<span></span><span></span><span></span><span></span>
+						<div class="title">
+							<p>에몬스 소식</p>
+						</div>
+						<div class="content">
+							<a href="">놓칠 수 없는 요즘 소식</a>
+							<a href="">셀럽 / 프로모션</a>
+							<a href="">광고 / 홍보영상</a>
+						</div>
+					</li>
+					<li>
+						<span></span><span></span><span></span><span></span>
+						<div class="title">
+							<p>이벤트</p>
+						</div>
+						<div class="content">
+							<a href="">진행중인 이벤트</a>
+							<a href="">당첨자 확인</a>
+							<a href="">지난 이벤트</a>
+						</div>
+					</li>
+					<li>
+						<span></span><span></span><span></span><span></span>
+						<div class="title">
+							<p>에몬스 매장 찾기</p>
+						</div>
+						<div class="content">
+							<a href="">내 주변 가까운 매장 찾기</a>
+							<a href="">VR SHOW ROOM</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="ft_top">
+			<div class="ft_logo"><img src="images/ft_logo.png" alt="ft logo"></div>
+			<div class="ft_top_right">
+				<div class="customer_service">
+					<a href="">개인정보처리방침</a>
+					<a href="">고객센터 1800 9977</a>
+				</div>
+				<div class="family_site">
+					<div class="title">
+						<a href="">FAMILY SITE</a>
+					</div>
+					<div class="content">
+						<ul>
+							<li><a href="">에몬스가구</a></li>
+							<li><a href="">에몬스홈 온라인몰</a></li>
+							<li><a href="">에몬스 특판</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</section>
-		<footer id="footer">
-				<div class="copyright">
-					<ul>
-						<li><span>주소 : 서울시 강남구 논현로 131길 39(논현동) 와일리타워</span></li>
-						<li><span>Tel : 02-545-3477</span></li>
-						<li><span>Fax : 02-545-3494</span></li>
-						<li><span>E-mail : wylie@wylie.co.kr</span></li>
-					</ul>
-					<p>COPYRIGHTⓒ WYLIE. ALL RIGHTS RESERVED.</p>
-				</div>
-				<div class="sns">
-					<ul>
-						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-					</ul>
-				</div>
-		</footer>
-	</div>
-</body>
+		</div>
+		<div class="ft_bottom">
+			<div class="copyright">
+				<span>COPYRIGHT ⓒ EMONS FURNITURE CO., LTD. ALL RIGHTS RESERVED</span>
+			</div>
+			<div class="sns">
+				<ul>
+					<li><a href=""><img src="images/ico_sns1.png" alt="instagram"></a></li>
+					<li><a href=""><img src="images/ico_sns2.png" alt="youtube"></a></li>
+					<li><a href=""><img src="images/ico_sns3.png" alt="blog"></a></li>
+					<li><a href=""><img src="images/ico_sns4.png" alt="facebook"></a></li>
+					<li><a href=""><img src="images/ico_sns5.png" alt="post"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
 </html>

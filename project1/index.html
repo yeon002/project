@@ -1,211 +1,485 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>W concept</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/font.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="https://code.jquery.com/jquery-1.10.1.min.js" ></script>
-<script src="js/main.js"></script>
+	<title>OLGODA</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@terwanerik/scrolltrigger@1.0.5/dist/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </head>
-
 <body>
-	<a href="#content" class="skip_nav">본문 바로가기</a>
-
 	<div class="wrapper">
 		<header id="header">
-			<div class="top">
-				<div class="left">
-					<div class="sns">
-						<ul>
-							<li><a href=""><img src="images/social_icon1.gif" alt="facebook"></a></li>
-							<li><a href=""><img src="images/social_icon2.gif" alt="facebook"></a></li>
-							<li><a href=""><img src="images/social_icon3.gif" alt="facebook"></a></li>
-						</ul>
+			<div class="inner">
+				<div class="logo"><a href="">logo</a></div>
+				<div class="header_r">
+					<div class="top">
+						<div class="head_utils">
+							<ul>
+								<li><a href="">로그인</a></li>
+								<li><a href="">회원가입</a></li>
+							</ul>
+						</div>
+						<div class="head_sns">
+							<ul>
+								<li><a href=""><i class="fa-brands fa-youtube" alt="youtube"></i></a></li>
+								<li><a href=""><i class="fa-brands fa-facebook" alt="facebook"></i></a></li>
+								<li><a href=""><span>blog</span></a></li>
+								<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<a href=""><img src="images/btn_mileage.gif" alt="mileage"></a>
-				</div>
-				<div class="logo"><a href=""><h1><img src="images/logo.png"></h1></a></div>
-				<div class="right">
-					<ul>
-						<li><a href="">LOGIN</a></li>
-						<li><a href="">JOIN</a></li>
-						<li><a href="">개인정보취급방침</a></li>
-					</ul>
+					<nav id="gnb">
+						<div class="desktop_menu">
+							<ul>
+								<li>
+									<a href="">올고다 소개</a>
+									<ul>
+										<li><a href="">옳고, 곧고, 다른</a></li>
+										<li><a href="">브랜드 스토리</a></li>
+										<li><a href="">올고다 BI</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">제품 소개</a>
+									<ul>
+										<li><a href="">올고다 마루</a></li>
+										<li><a href="">오브제</a></li>
+										<li><a href="">로카$로카 프리미엄</a></li>
+										<li><a href="">밸런스</a></li>
+										<li><a href="">시그니처</a></li>
+										<li><a href="">그루브</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">VR 인테리어</a>
+									<ul>
+										<li><a href="">24평형</a></li>
+										<li><a href="">32평형</a></li>
+										<li><a href="">40평형</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">OL-care 서비스</a>
+									<ul>
+										<li><a href="">올케어 소개</a></li>
+										<li><a href="">서비스 신청</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">올고다 컨텐츠</a>
+									<ul>
+										<li><a href="">시공사례</a></li>
+										<li><a href="">Moment</a></li>
+										<li><a href="">Catalog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">고객지원</a>
+									<ul>
+										<li><a href="">Contact us</a></li>
+										<li><a href="">FAQ</a></li>
+										<li><a href="">Q&A</a></li>
+										<li><a href="">전시장/대리점</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				
+					<nav id="mobile">
+						<a href=""><i class="fa-solid fa-xmark"></i></a>
+						<div class="mobile_menu">
+							<ul>
+								<li>
+									<a href="">About us</a>
+									
+									<ul>
+										<li><a href="">옳고, 곧고, 다른</a></li>
+										<li><a href="">브랜드 스토리</a></li>
+										<li><a href="">올고다 BI</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">Product</a>
+									<ul>
+										<li><a href="">올고다 마루</a></li>
+										<li><a href="">오브제</a></li>
+										<li><a href="">로카$로카 프리미엄</a></li>
+										<li><a href="">밸런스</a></li>
+										<li><a href="">시그니처</a></li>
+										<li><a href="">그루브</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">VR Interior</a>
+									<ul>
+										<li><a href="">24평형</a></li>
+										<li><a href="">32평형</a></li>
+										<li><a href="">40평형</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">OL-care Service</a>
+									<ul>
+										<li><a href="">올케어 소개</a></li>
+										<li><a href="">서비스 신청</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">Content</a>
+									<ul>
+										<li><a href="">시공사례</a></li>
+										<li><a href="">Moment</a></li>
+										<li><a href="">Catalog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">Support</a>
+									<ul>
+										<li><a href="">Contact us</a></li>
+										<li><a href="">FAQ</a></li>
+										<li><a href="">Q&A</a></li>
+										<li><a href="">전시장/대리점</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<div class="tab">
+						<a href=""><i class="fa-solid fa-bars"></i></a>
+					</div>
 				</div>
 			</div>
-			<div class="menu">
-				<nav id="gnb">
-					<ul>
-						<li>
-							<a href="">NEW</a>
-							<ul>
-								<li><a href="">ARRIVED</a></li>
-								<li><a href="">NEW</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="">WOMEN</a>
-							<ul>
-								<li><a href="">APPAREL</a></li>
-								<li><a href="">SHOES</a></li>
-								<li><a href="">BAGS</a></li>
-								<li><a href="">ACCESSORIES</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="">MEN</a>
-							<ul>
-								<li><a href="">APPAREL</a></li>
-								<li><a href="">SHOES</a></li>
-								<li><a href="">BAGS & ACC</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="">LIFE</a>
-							<ul>
-								<li><a href="">APARTMENT</a></li>
-								<li><a href="">ELECTRONICS</a></li>
-								<li><a href="">CULTURE</a></li>
-								<li><a href="">BEAUTY</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="">SALE</a>
-							<ul>
-								<li><a href="">SALE</a></li>
-								<li><a href="">SALE EVENT</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="">BRAND</a>
-							<ul>
-								<li><a href="">EXCLUSIVE</a></li>
-								<li><a href="">TOP</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
+
 		</header>
-
-		<div class="slider">
-			<div class="slider_moving">
+		
+		<section id="page1" class="main_visual">
+			<div class="swiper-container mainSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/slider1.png" alt=""></div>
+					<div class="swiper-slide"><img src="images/slider2.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="images/slider3.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="images/slider4.jpg" alt=""></div>
+				</div>
+				<div class="container">
+					<div class="text">
+						<strong>OLGODA</strong>
+						<p>옳고, 곧고, 다른 <br> 세상에 하나뿐인 나만의 디자인</p>
+						<div class="control">
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section id="section">
+			<div class="content1">
+				<div class="title">OLGODA<strong>Product</strong></div>
 				<ul>
-					<li><a href=""><img src="images/key1.jpg" alt="key1"></a></li>
-					<li><a href=""><img src="images/key2.jpg" alt="key2"></a></li>
-					<li><a href=""><img src="images/key3.jpg" alt="key3"></a></li>
-					<li><a href=""><img src="images/key4.jpg" alt="key4"></a></li>
+					<li>
+						<a href="">
+							<div class="img animated_img delay3"><img src="images/card1.jpg" alt=""></div>
+							<div class="text">
+								<h2>PRODUCT</h2>
+								<span>
+									READ MORE
+									<i class="fa-sharp fa-solid fa-arrow-right"></i>							
+								</span>
+							</div>
+						</a>						
+					</li>
+					<li>
+						<a href="">
+							<div class="img animated_img delay5">
+								<img src="images/card2.jpg" alt="">
+
+							</div>
+							<div class="text">
+								<h2>INTERIOR</h2>
+								<span>
+									READ MORE
+									<i class="fa-sharp fa-solid fa-arrow-right"></i>
+								</span>
+							</div>
+						</a>
+					</li>
 				</ul>
 			</div>
-			<div class="direction">
-				<a href="" class="left"><img src="images/btn_left.png" alt="left"></a>
-				<a href="" class="right"><img src="images/btn_right.png" alt="right"></a>
-			</div>
-			<div class="control">
-				<ul>
-					<li><a href="">1</a></li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-				</ul>
-			</div>
-		</div>
-
-
-		<section id="content">
-			<div class="content1 clearfix">
-				<div class="con1_1">
-					<a href=""><img src="images/buttero.jpg" alt="buttero"></a>
+			<div class="content2">
+				<div class="inner">
+					<ul>
+						<li>
+							<a href="">
+								<div class="img animated_img delay3">
+									<img src="images/content2_1.jpg">
+									<div class="cover">
+										<i class="fa-solid fa-plus"></i>
+										<span>READ MORE</span>
+									</div>
+								</div>
+								<div class="text">
+									<h2>OL-care 서비스</h2>
+									<p>간편하고 손쉽게 A/S를 문의하세요.</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="img animated_img delay5">
+									<img src="images/content2_2.jpg">
+									<div class="cover">
+										<i class="fa-solid fa-plus"></i>
+										<span>READ MORE</span>
+									</div>
+								</div>
+								<div class="text">
+									<h2>디자인 & 필로소피</h2>
+									<p>다양한 제품을 확인하세요.</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="img animated_img delay8">
+									<img src="images/content2_3.jpg">
+									<div class="cover">
+										<i class="fa-solid fa-plus"></i>
+										<span>READ MORE</span>
+									</div>
+								</div>
+								<div class="text">
+									<h2>시공 사례</h2>
+									<p>40년의 목재 기술력을 확인해보세요.</p>
+								</div>
+							</a>						
+						</li>
+					</ul>
 				</div>
-				<div class="con1_2">
-					<a href="">
-						<h4>buttero</h4>
-						<span>101% handcrafted</span>
-						<p>A fusion of pure rawness <br> and elegance</p>
-						<span class="button">view more</span>
-					</a>
-				</div>
 			</div>
-			<div class="content2 clearfix">
-				<div class="con2_1">
-					<a href="">
-						<h4>atclip launching</h4>
-						<span>new launching</span>
-						<p>Focus on restraint <br> and the complex beauty</p>
-						<span class="button">view more</span>
-					</a>
-				</div>
-				<div class="con2_2">
-					<a href=""><img src="images/atclip.jpg" alt="atclip"></a>
-				</div>
-			</div>
-			<div class="content3 clearfix">
-				<div class="con3_1 clearfix">
-					<div class="top1">
+			<div class="content3">
+				<div class="moment">
+					<div class="title">
+						<h2>moment</h2>
 						<a href="">
-							<img src="images/heich.jpg" alt="heitch">
-							<div class="text">
-								<p>heich blade 17 f/w collection</p>
-								<h4>lookbook</h4>
-								<span class="button">view more</span>
+							READ MORE
+							<i class="fa-sharp fa-solid fa-arrow-right"></i>						
+						</a>
+
+					</div>
+
+					<div class="moment-wrapper">
+						<div class="moment-container momentSwiper">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<a href="">
+										<img src="images/moment1.png">
+										<div class="text">
+											<p>[Video] 이 바닥을 바꾼다. 강하게. (30")</p>
+											<span>2021-11-15</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="">
+										<img src="images/moment2.png">
+										<div class="text">
+											<p>[Video] 시작합니다. 바닥부터 <br> 브랜드 필름(30")</p>
+											<span>2021-04-05</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="">
+										<img src="images/moment3.png">
+										<div class="text">
+											<p>[Video] 시작합니다. 바닥부터 <br> 올케어 서비스(30")</p>
+											<span>2021-04-05</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="">
+										<img src="images/moment4.png">
+										<div class="text">
+											<p>[Video] 시작합니다. 바닥부터 <br> 올케어 서비스(15")</p>
+											<span>2021-04-05</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="">
+										<img src="images/moment5.png">
+										<div class="text">
+											<p>[Video] 이 바닥을 바꾼다. 강하게. (15")</p>
+											<span>2021-11-15</span>
+										</div>
+									</a>
+								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qna">
+					<div class="title">
+						<h2>Q&A</h2>
+						<a href="">
+							READ MORE
+							<i class="fa-sharp fa-solid fa-arrow-right"></i>						
 						</a>
 					</div>
-					<div class="bot1">
-						<a href="">
-							<img src="images/new.png" alt="new">
-							<div class="text">
-								<h4>new</h4>
-								<p>new in this week</p>
-								<span>view more</span>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="con3_2">
-					<div class="top2">
-						<a href="">
-							<h4>sale</h4>
-							<p>다양하고 특별한 할인 혜택을 만나보세요.</p>
-							<span>view more</span>
-						</a>
-					</div>
-					<div class="bot2">
-						<a href="">
-							<img src="images/mimic.jpg" alt="mimic">
-							<div class="text">
-								<p>mimicawe 17 f/w</p>
-								<h4>collection</h4>
-								<span class="button">view more</span>
-							</div>
-						</a>
+					<div class="card">
+						<ul>
+							<li>
+								<a href="">
+									<span class=string></span>
+									<h3>Q. 제품구매
+										<br><span>올고다 마루는 어디서 구매할 수 있나요?</span>
+									</h3>	
+									<span>
+										<strong>A.</strong>
+										Showroom에 있는 올고다 전시장, 대리점에서 구매하실 수 있습니다. 또는, 고객센터(1661-0999)로 연락해 주시면 올고다 마루를 구매할 수 있는 가까운 대리점을 안내해 드리겠습니다.
+									</span>					
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class=string></span>
+									<h3>Q. A/S
+										<br><span>올고다 마루를 시공했는데 하자가 발생했습니다. 어떻게 해야 되나요?</span>
+									</h3>	
+									<span>
+										<strong>A.</strong>
+										시공으로 인한 하자는 올고다 마루를 구매하신 대리점에 문의 부탁드립니다. 시공이 아닌 제품 불량으로 확인 될 경우, 올고다 보증 서비스를 받으실 수 있습니다.
+									</span>			
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		<footer id="footer">
-			<div class="text">
-				<span>㈜더블유컨셉코리아 대표자 : 황재익 서울특별시 강남구 테헤란로14길 16, 5층</span>  
-				<a href=""><img src="images/private_ot.png" alt="private"></a>
+			<div class="top">
+				<div class="contact">
+					<span>contact</span>
+					<h5><strong>온라인 문의</strong>를 통해 <br> 간편하게<br>문의해보세요.</h5>
+					<p>입력해주신 정보는 저장되거나 공개되지 않으며<br>담당자 이메일로 발송됩니다.</p>
+				</div>
+				<div class="privacy">
+					<div class="priv">
+						<ul>
+							<li>
+								<div class="text">
+									이름
+									<span>*</span>
+								</div>
+								<input type="text" name="name">
+							</li>
+							<li>
+								<div class="text">
+									기관, 기업
+									<span>*</span>
+								</div>
+								<input type="text" name="company">
+							</li>
+							<li>
+								<div class="text">
+									이메일
+									<span>*</span>
+								</div>
+								<input type="text" name="email">
+							</li>
+							<li>
+								<div class="text">
+									연락처
+									<span>*</span>
+								</div>
+								<input type="text" name="phone">
+							</li>
+
+						</ul>
+					</div>
+					<div class="inquary">
+						<div class="text">
+							<span>문의사항 (1000자 이내)</span>
+							<div id="test_cnt">0 / 1000</div>
+						</div>
+
+						<textarea id="test" name="test" cols="30" rows="10"></textarea>
+					</div>
+					<div class="button">
+						<div class="check">
+							<input type="checkbox" id="check">
+							<a href="" class="checkbox" title="check box">
+								<i class="fa-solid fa-check"></i>	
+								<span>개인정보처리방침</span> <p>에 동의합니다.</p>					
+							</a>
+						</div>
+						<input type="button" value="온라인 문의"></input>
+					</div>
+				</div>
 			</div>
-			<div class="sns">
-				<ul>
-					<li><a href=""><img src="images/facebook_ot.png" alt="facebook"></a></li>
-					<li><a href=""><img src="images/blog_ot.png" alt="blog"></a></li>
-					<li><a href=""><img src="images/kakao_ot.png" alt="kakao"></a></li>
-				</ul>
+			<div class="bot">
+				<div class="left">
+					<div class="logo"><a href=""><!--<img src="images/logo_white.png" alt="">--></a></div>
+					<div class="copyright">
+						<div class="adress1">
+							<p><span>Hot line</span> 1661 - 0999</p>							
+						</div>
+							<p>Address : 40, sagimaggollo 9beongil, Seongnam, Jungwon, Gueonggi, Korea </p>
+						<div class="adress2">
+							<p>CEO : Sangjun Han</p>
+							<p>Business Registration Number : 722-85-02459  </p>
+						</div>
+						<div class="adress3">
+							<p>Copyright 2021 Unid All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="container">
+						<form action="" method="">
+							<div class="select">
+								<dl>
+									<dt><a href="">Family Site <span>+</span></a></dt>
+									<dd>
+										<ul>
+											<li><a href="">Family Site 1</a></li>
+											<li><a href="">Family Site 2</a></li>
+											<li><a href="">Family Site 3</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
-			<div class="copyright"> copyright(c) 2018 W concept all rights reserved. </div>
-		</div>
-	</footer>
+		</footer>
 	</div>
 </body>
 </html>
